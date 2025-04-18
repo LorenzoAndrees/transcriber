@@ -22,6 +22,24 @@ Una vez estando en la carpeta con el código, se debe ejecutar el siguiente coma
 python3 main.py
 ```
 
+Para correr el script con un modelo en específico usar --model. Por ejemplo, para correrlo con el modelo turbo usar:
+
+```console
+python3 main.py --model turbo
+```
+
+Los modelos son los siguientes (ordenados de menos inteligente a más inteligente):
+| Modelo | Parámetros | Velocidad |
+|----------|----------|----------|
+| tiny | 39 millones | ~10x |
+| base | 74 millones | ~7x |
+| small | 244 millones | ~4x |
+| medium | 769 millones | ~2x |
+| large | 1550 millones | 1x |
+| turbo | 809 millones | ~8x |
+
+(El modelo turbo es el más eficiente en términos de inteligencia/velocidad).
+
 ## Resultado
 
 Una vez finalizada la transcripción, el script genera un archivo de texto con el mismo nombre del archivo de audio.
